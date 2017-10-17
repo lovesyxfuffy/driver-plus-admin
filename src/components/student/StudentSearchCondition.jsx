@@ -20,6 +20,7 @@ class OrderSearchCondition extends Component {
             actions.setClassList(res.data.data)
         })
     }
+    //TODO condition没进reducer
     onSearchChange(event,type){
         let actions = this.props.dispatch.actions.getAction();
         actions.setStudentCondition(event.target.value,type);

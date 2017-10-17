@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64a4d24-f506-427f-9192-f8c94b105c59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/react_admin_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/http/gritter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/http/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/http/logError.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/order/OrderSearchCondition.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/order/OrderSelect.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/order/orderList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/student/StudentList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/student/StudentSearchCondition.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/student/StudentSelect.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/Action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/index.js" afterPath="$PROJECT_DIR$/src/action/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/BreadcrumbCustom.jsx" afterPath="$PROJECT_DIR$/src/components/BreadcrumbCustom.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ui/Buttons.jsx" afterPath="$PROJECT_DIR$/src/components/ui/Buttons.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducer/index.js" afterPath="$PROJECT_DIR$/src/reducer/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/index.js" afterPath="$PROJECT_DIR$/src/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/student/StudentSearchCondition.jsx" afterPath="$PROJECT_DIR$/src/components/student/StudentSearchCondition.jsx" />
     </list>
     <ignored path="react-admin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,8 +123,8 @@
       <file leaf-file-name="StudentSearchCondition.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/student/StudentSearchCondition.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="224">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -535,12 +514,12 @@
       <workItem from="1507860950107" duration="36741000" />
       <workItem from="1508152364327" duration="565000" />
       <workItem from="1508206388948" duration="210000" />
-      <workItem from="1508237358055" duration="5433000" />
+      <workItem from="1508237358055" duration="5567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44831000" />
+    <option name="totallyTimeSpent" value="44965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="980" extended-state="6" />
@@ -953,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/student/StudentSearchCondition.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="224">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
