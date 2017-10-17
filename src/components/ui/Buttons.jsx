@@ -41,7 +41,6 @@ class Buttons extends React.Component {
                         <div className="gutter-box">
                             <Card bordered={false}>
                                 <Button type="primary">Primary</Button>
-                                <Button>Default</Button>
                                 <Button type="dashed">Dashed</Button>
                                 <Button type="danger">Danger</Button>
                             </Card>

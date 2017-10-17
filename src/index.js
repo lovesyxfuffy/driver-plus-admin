@@ -9,6 +9,7 @@ import { createStore, applyMiddleware } from 'redux';
 import reducer from './reducer';
 
 import CRouter from './routes';
+import Action from "./utils/Action";
 
 
 // redux 注入操作
@@ -16,11 +17,21 @@ const middleware = [thunk];
 const store = createStore(reducer, applyMiddleware(...middleware));
 console.log(store.getState());
 
-ReactDOM.render(
-    <Provider store={store}>
-        <CRouter store={store} />
-    </Provider>
- ,
-  document.getElementById('root')
-);
+class Main extends React.Component {
+
+    constructor(props) {
+        super(props)
+        store.dispatch.actions = new Action(store.dispatch)
+    }
+
+    render() {
+        return (
+            <Provider store={store}>
+                <CRouter store={store} />
+            </Provider>
+        )
+    }
+}
+ReactDOM.render(<Main />, document.getElementById('root')); //使用组件并渲染到界面
+
 registerServiceWorker();
