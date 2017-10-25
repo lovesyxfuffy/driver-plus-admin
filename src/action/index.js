@@ -69,4 +69,15 @@ export const setStudentCondition = (data, colName)=>({
 export const setStudentList = (data)=>({
     type: "STUDENT_LIST",
     data: data
+});
+
+export const setStudentInfo = (data)=>({
+    type:"STUDENT_INFO",
+    data:data
+});
+
+export const changeStudentInfo = (data,colName)=>({
+    type:"STUDENT_INFO_CHANGE",
+    colName:colName,
+    data:data
 })

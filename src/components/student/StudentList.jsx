@@ -4,11 +4,10 @@ import {Table} from 'antd';
 import {get, post} from '../http/http'
 import BreadcrumbCustom from '../BreadcrumbCustom';
 import SelectTable from './StudentSelect';
-import {Row, Col, Card, Button, Radio, Icon, Menu, Dropdown} from 'antd';
+import {Row, Col, Card, message, Form, Upload, Button, Radio, Icon, Menu, Dropdown} from 'antd';
 import StudentSearchCondition from './StudentSearchCondition';
 
-
-
+const FormItem = Form.Item;
 
 class StudentSelect extends React.Component {
     constructor(props) {
@@ -18,9 +17,8 @@ class StudentSelect extends React.Component {
     }
 
     componentDidMount() {
-
+        
     }
-
 
 
     render() {
@@ -30,6 +28,25 @@ class StudentSelect extends React.Component {
             ...(orderStatistic[0]),
             key: 1
         };
+        const uploadProps = {
+            name: 'file',
+            action: '//jsonplaceholder.typicode.com/posts/',
+            headers: {
+                authorization: 'authorization-text',
+            },
+            onChange(info) {
+                if (info.file.status !== 'uploading') {
+                    console.log(info.file, info.fileList);
+                }
+                if (info.file.status === 'done') {
+                    message.success(`${info.file.name} file uploaded successfully`);
+                } else if (info.file.status === 'error') {
+                    message.error(`${info.file.name} file upload failed.`);
+                }
+            },
+            defaultFileList:{}
+        };
+
         return (
             <div className="gutter-example">
                 <BreadcrumbCustom first="表格" second="订单列表"/>
@@ -47,8 +64,13 @@ class StudentSelect extends React.Component {
                         <div className="gutter-box">
                             <Card title="学生列表" extra={
                             <div>
+                            <Button >创建</Button>
                             <Button >导出</Button>
-
+                            <Upload props={uploadProps}>
+                                <Button>
+                                  <Icon type="upload" /> 导入
+                                </Button>
+                            </Upload>
                             </div>
                             } bordered={false}>
                                 <SelectTable {...this.props} />

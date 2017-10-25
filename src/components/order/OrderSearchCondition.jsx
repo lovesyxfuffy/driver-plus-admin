@@ -50,10 +50,10 @@ class OrderSearchCondition extends Component {
         let renderClass = [];
         let renderField = [];
         classList.forEach(function(value,index){
-            renderClass.push(<Option key={index} value={value.id+""}>{value.name}</Option>)
+            renderClass.push(<Option key={value.id+""} value={value.id+""}>{value.name}</Option>)
         });
         fieldList.forEach((value,index)=>{
-            renderField.push(<Option key={index} value={value.id+""}>{value.name}</Option>)
+            renderField.push(<Option key={value.id+""} value={value.id+""}>{value.name}</Option>)
         });
         // Only show error after a field is touched.
         return (

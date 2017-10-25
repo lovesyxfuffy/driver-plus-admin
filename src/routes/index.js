@@ -28,6 +28,7 @@ import ExampleAnimations from '../components/animation/ExampleAnimations';
 import AuthBasic from '../components/auth/Basic';
 import RouterEnter from '../components/auth/RouterEnter';
 import OrderList from '../components/order/OrderList';
+import StudentForm from '../components/student/StudentFrom'
 import StudentList from '../components/student/StudentList';
 
 const Wysiwyg = (location, cb) => {     // 按需加载富文本配置
@@ -48,16 +49,22 @@ export default class CRouter extends Component {
             <Router history={hashHistory}>
                 <Route path={'/'} components={Page}>
                     <IndexRedirect to="/app/dashboard/index" />
+
                     <Route path={'app'} component={App}>
                         <Route path={'form'}>
                             <Route path={'basicForm'} component={BasicForm} />
+                        </Route>
+                        <Route path={'test'} >
+                            <Route path={'orderList'} components={OrderList} />
+                            <Route path={'studentList'} components={StudentList} />
+                            <Route path={'studentForm/:id'} components={StudentForm} />
+
                         </Route>
                         <Route path={'table'}>
                             <Route path={'basicTable'} component={BasicTable} />
                             <Route path={'advancedTable'} components={AdvancedTable} />
                             <Route path={'asynchronousTable'} components={AsynchronousTable} />
-                            <Route path={'orderList'} components={OrderList} />
-                            <Route path={'studentList'} components={StudentList} />
+
 
                         </Route>
                         <Route path={'chart'}>

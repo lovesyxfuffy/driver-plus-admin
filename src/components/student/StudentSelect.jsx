@@ -21,7 +21,11 @@ const columns = [{
     dataIndex: 'classTypeStr',
 },{
     title: '操作', dataIndex: '',
-    key: 'id', render: (text,record) => <Link to={"/student/edit/"+record.key}>编辑</Link>}];
+    key: 'id', render: (text,record) => {
+        return <Link to={"/app/test/studentForm/"+record.id}>编辑</Link>
+    }
+
+}];
 
 class SelectTable extends React.Component {
     state = {

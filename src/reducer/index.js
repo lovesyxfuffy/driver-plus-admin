@@ -23,7 +23,9 @@ const initData = {
         pageSize: 10,
     },
     classList: [],
-    fieldList: []
+    fieldList: [],
+    studentInfo:{},
+    studentInfoPost:{}
 };
 
 const indexReducer = (state = initData, action) => {
@@ -73,8 +75,30 @@ const indexReducer = (state = initData, action) => {
                 ...state,
                 studentList:action.data
             };
+        case "STUDENT_SEARCH_CONDITION":
+            return{
+                ...state,
+                studentSearchCondition:{
+                    ...state.studentSearchCondition,
+                    [action.colName]:action.data
+                }
+            };
+        case "STUDENT_INFO":
+            return{
+                ...state,
+                studentInfo:action.data
+            };
+        case "STUDENT_INFO_CHANGE":
+            return{
+                ...state,
+                studentInfoPost:{
+                    ...state.studentInfoPost,
+                    [action.colName]:action.data
+                }
+            }
         default:
             return {...state};
+
     }
 };
 
